@@ -21,11 +21,45 @@ Fundamental operations performed on sets are:
 
 1. **Union**
   A new set is obtained by combining the members of one set with the memebers of another set, no duplicates.
+
+  ```
+  set1
+  Set { values: [ 'mike', 'angie', 'greg' ], length: 3 }
+
+  set2
+  Set { values: [ 'mike', 'angie', 'brian' ], length: 3 }
+
+  unionSet
+  Set { values: [ 'mike', 'angie', 'greg', 'brian' ], length: 4 }
+  ```
+  
 2. **Intersection**
   A new set is obtained by adding all the members of one set that also exist in a second set.
+
+  ```
+  set1
+  Set { values: [ 'mike', 'angie', 'greg' ], length: 3 }
+
+  set2
+  Set { values: [ 'mike', 'angie', 'brian' ], length: 3 }
+
+  intersectionSet
+  Set { values: [ 'mike', 'angie' ], length: 2 }
+  ```
+
 3. **Difference**
   A new set is obtained by adding all the members of one set except those that also exist in a second set.
   A Set is said to be a difference of Set A and B if it contains set of elements which are present in Set A but not in Set B.
+  ```
+  set1
+  Set { values: [ 'mike', 'angie', 'greg' ], length: 3 }
+
+  set2
+  Set { values: [ 'mike', 'angie', 'brian' ], length: 3 }
+
+  differenceSet
+  Set { values: [ 'greg' ], length: 1 }
+  ```
 
 # Sets Exercise
 
