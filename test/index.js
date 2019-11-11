@@ -108,10 +108,23 @@ describe("Set", () => {
       expect(set.difference).to.not.be.undefined;
     });
 
-    it("should return a set items in only 1 set", () => {
+    it("should return a set items in only 1 set that are not present in the second set", () => {
       let set1 = new Set([1, 2, 3, 4]);
       let set2 = new Set([3, 4, 5]);
       let set3 = set1.difference(set2);
+      expect(set3.values).to.deep.equal([1, 2]);
+    });
+  });
+  describe("Set#symmetricalDifference", () => {
+    it("should have a `symmetricalDifference` method", () => {
+      let set = new Set();
+      expect(set.symmetricalDifference).to.not.be.undefined;
+    });
+
+    it("should return a set all the elements of set A that are not in Set B and vice-versa,", () => {
+      let set1 = new Set([1, 2, 3, 4]);
+      let set2 = new Set([3, 4, 5]);
+      let set3 = set1.symmetricalDifference(set2);
       expect(set3.values).to.deep.equal([1, 2, 5]);
     });
   });
