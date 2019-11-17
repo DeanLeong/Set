@@ -6,7 +6,7 @@ A set is a collection of unique elements. The elements of a set are called *memb
    1. Unordered members
    2. No member can occur more than once.
 
-Sets are not considere a separate data structure in many programming languages, however Sets can be useful when we want to creare a data structure that consists only of unique elements, such as list of a unique words in text.
+Sets are not considered a separate data structure in many programming languages, however Sets can be useful when we want to creare a data structure that consists only of unique elements, such as list of a unique words in text.
 
 Mathematically a Set is denoted as a list of members, surrounded by curly braces, such as `{0,1,2,3,4}`. We can write set in any order, so the previous set can be written as `{4,3,2,1,0}` or `{3,0,1,2,4}` or any other combination of the members such that **all the members are written just once.**
 
