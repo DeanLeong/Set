@@ -12,6 +12,7 @@ class Set {
 
   remove(value) {
     // if `value` is in the `values` property, then remove it and decrement the `length` property
+    // Hint: values are unordered in a set so you don't necessarily know where it is in the values array
     
   }
 
