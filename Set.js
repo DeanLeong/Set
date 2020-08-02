@@ -1,9 +1,8 @@
 class Set {
-  constructor() { 
-    // Create a `values` property and set it equal to an empty array
-    // Create a `length` property and set it equal to the length of the values property
-    // Accept a `list` parameter (default to an empty array)
-    // Loop through the `list` and insert each item into the set(use insert class method you will define later)
+  constructor(list = []) {
+    this.values = [];
+    this.length = this.values.length;
+    list.forEach(a => this.insert(a));
   }
 
 
