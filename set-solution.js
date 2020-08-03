@@ -40,17 +40,28 @@ class Set {
   }
 }
 
-let group = new Set();
+//let group = new Set();
+// console.log("new Set initialized")
+// console.log(group)
 
-group.insert("mike");
-group.insert("angie");
-group.insert("greg");
-console.log(group)
-let group2 = new Set();
+// group.insert("bob");
+// console.log(group)
+// group.insert("joe");
+// group.insert("beth");
+// console.log(group)
+// let group2 = new Set();
 
-group2.insert("mike");
-group2.insert("angie");
-group2.insert("brian");
-console.log(group2)
-let group3 = group.union(group2);
-console.log(group3)
+// group2.insert("bob");
+// group2.insert("joe");
+// group2.insert("mary");
+// console.log(group2)
+
+// let group3 = group.union(group2);
+// console.log(group3)
+
+// group3.insert('mildred')
+// console.log(group3)
+
+// console.log(group3.difference(new Set(["bob", "joe", "amy"])))
+
+// console.log(group.symmetricalDifference(group2))
